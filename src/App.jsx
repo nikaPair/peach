@@ -1,11 +1,19 @@
 import "./main.scss";
 import Header from "./components/header/Header";
-import Cities from "./components/cities/Cities";
+import Title from "./components/title/Title";
+import Mission from "./components/mission/Mission";
+import Directions from "./components/directions/Directions";
+import Compensations from "./components/compensations/Compensations";
+import Slider from "./components/slider/Slider";
 function App() {
     return (
         <>
             <Header />
-            <Cities />
+            <Title/>
+            <Mission/>
+            <Directions/>
+            <Compensations />
+            <Slider />
         </>
     );
 }

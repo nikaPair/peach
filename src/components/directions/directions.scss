@@ -1,0 +1,49 @@
+@use "../../assets/styles/mixins.scss" as *;
+
+.directions {
+  &__container {
+    @include container();
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+    padding: 100px 0;
+  }
+  &__title {
+    font-size: 56px;
+    color: #444444;
+    text-align: center;
+  }
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  &__item {
+    width: 615px;
+    height: 260px;
+    position: relative;
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &:hover .directions__description {
+      transform: translateY(0%);
+      justify-content: unset;
+      gap: 20px;
+    }
+  }
+  &__description {
+    position: absolute;
+    transform: translateY(75%);
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+    background: #2d36538e;
+    transition: 0.5s all ease;
+  }
+}

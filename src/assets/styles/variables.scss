@@ -1,10 +1,2 @@
-@font-face {
-    font-family: "Proxima Nova Condensed Regular";
-    font-style: normal;
-    font-weight: normal;
-    src: local("Proxima Nova Condensed Regular"),
-        url("../fonts/Mark Simonson  Proxima Nova Condensed Regular TheFontsMaster.com.woff")
-            format("woff");
-}
-
-$base-font: "Proxima Nova Condensed Regular", "Arial", "Helvetica", "sans-serif";
+@import url('https://fonts.cdnfonts.com/css/proxima-nova-condensed');
+$base-font: 'Proxima Nova Condensed', sans-serif;

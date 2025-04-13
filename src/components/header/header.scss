@@ -1,20 +1,31 @@
 @use "../../assets/styles/mixins.scss";
 
 .header {
+
     &__container {
         @include mixins.container;
         display: flex;
         justify-content: space-between;
-        gap: 297px;
         padding: 30px 70px;
         border: 1px solid #d9d9d9;
+        @media screen and (max-width: 960px){
+            flex-direction: column;
+            gap: 16px;
+            padding: 15px 5px;
+        }
     }
     &__links {
         display: flex;
         gap: 20px;
+        @media screen and (max-width: 960px){
+            flex-wrap: wrap;
+        }
     }
     &__link-item {
         font-size: 18px;
         color: #444444;
+        @media screen and (max-width: 960px){
+            font-size: 14px;
+        }
     }
 }
